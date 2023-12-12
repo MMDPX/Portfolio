@@ -15,7 +15,7 @@ Alternatively, after downloading the repo, the index.html file can be opened in 
 
 ## Credits
 
-N/A
+For this project, I used the starter code provided to me by the BootCampSpot.
 
 ## License
 
