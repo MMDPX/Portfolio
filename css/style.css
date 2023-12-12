@@ -57,6 +57,8 @@ body {
 }
 
 .flex-container1 > h2 {
+  font-style: italic;
+  text-decoration: underline;
   flex-grow: 1;
   text-align:start
   
@@ -80,6 +82,12 @@ body {
   background-image: url(./images/02-portfolio-1.jpg);
 }
 
+
+.flex-container2 h2 {
+  text-decoration: underline;
+  font-style: italic;
+}
+
 .flex-container2 a img {
   justify-content: space-between;
 }
@@ -101,6 +109,11 @@ body {
   display: block;
 }
 
+.flex-container3 h2 {
+  text-decoration: underline;
+  font-style: italic;
+}
+
 h1,
 h2,
 h3,
@@ -120,6 +133,7 @@ footer {
  background-color: var(--black);
  color: var(--red);
  font-size: xx-large;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer pre {
