@@ -2,20 +2,84 @@
   box-sizing: border-box;
 }
 
+:root {
+  --grey: #D6D1D1;
+  --red: #F10B0B;
+
+}
+
+@media (max-width: 768px) {
+  .flex-container2 > img {
+    width: 33.33333%;
+    height: auto;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  color: #fff;
+  padding: 20px;
+  color: var(--red);
+  background-image: url(./images/02-hero-bg.jpg);
+  font-weight: bolder;
+}
+
+header img {
+  height: 200px;
+  width: 200px;
+}
+
+header ul li {
+  justify-content: flex-end;
+  font-size: xx-large
 }
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  background-color: var(--grey);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin: 25px;
+  background-image: url(./images/02-portfolio-3.jpg);
+}
+
+.flex-container1 > h2 {
+  flex-grow: 1;
+  text-align:start
+  
+}
+
+.flex-container1 pre {
+  font-size: 25px;
+  justify-content: center;
+  text-wrap: wrap;
+}
+
+.flex-container2 {
+  display: block;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin: 25px;
+  background-image: url(./images/02-portfolio-1.jpg);
+}
+
+.flex-container2 a img {
+  justify-content: space-between;
 }
 
 h1,
