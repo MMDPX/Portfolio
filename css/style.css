@@ -5,13 +5,12 @@
 :root {
   --grey: #D6D1D1;
   --red: #F10B0B;
-
+  --black: #030303;
 }
 
 @media (max-width: 768px) {
-  .flex-container2 > img {
-    width: 33.33333%;
-    height: auto;
+  #my-projects > a img {
+    width: 50%;
   }
 }
 
@@ -19,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-size: cover;
   padding: 20px;
   color: var(--red);
   background-image: url(./images/02-hero-bg.jpg);
@@ -49,6 +49,7 @@ body {
   flex-grow: 1;
   flex-direction: row;
   flex-wrap: wrap;
+  background-size: cover;
   align-items: center;
   padding: 20px;
   margin: 25px;
@@ -73,6 +74,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  background-size: cover;
   padding: 20px;
   margin: 25px;
   background-image: url(./images/02-portfolio-1.jpg);
@@ -80,6 +82,23 @@ body {
 
 .flex-container2 a img {
   justify-content: space-between;
+}
+
+.flex-container3 {
+  display: block;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 25px;
+  background-image: url(./images/02-portfolio-4.jpg);
+  background-size: cover;
+  font-size: xx-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 3;
+}
+
+.flex-container3 a {
+  display: block;
 }
 
 h1,
@@ -93,4 +112,16 @@ h6 {
 
 p {
   margin: 0;
+}
+
+footer {
+ width: 100%; 
+ height: 120px;
+ background-color: var(--black);
+ color: var(--red);
+ font-size: xx-large;
+}
+
+footer pre {
+  text-align: center;
 }
